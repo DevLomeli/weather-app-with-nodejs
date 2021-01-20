@@ -78,6 +78,7 @@ footer {
 
 footer > p {
   opacity: 0.5;
+  text-align: center;
 }
 
 fieldset {
@@ -90,6 +91,10 @@ input[type="text"] {
   font-size: 20px;
 }
 
+input:focus {
+  outline: none;
+}
+
 button[type="submit"] {
   border: none;
   padding: 0.5rem 1rem;
@@ -100,4 +105,14 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   border: 1px solid black;
+}
+
+/*    WEATHER IMG STYLES    */
+.weatherImg {
+  display: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
 }

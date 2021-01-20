@@ -9,8 +9,8 @@ const getForecast = async (location) => {
       const { lat, long } = await geocode.getCoordenates(location);
       const res = await fetchDataFromAPI(lat, long);
       if (res.data.current) {
-        const { temperature } = res.data.current;
-        return { temperature, location };
+        const { temperature, weather_icons: weatherIcon } = res.data.current;
+        return { temperature, location, weatherIcon };
       } else {
         return { error: "Invalid location" };
       }

@@ -50,11 +50,7 @@ app.get("/weather", async (req, res) => {
       error: dataForecast.error,
     });
   }
-  const { temperature, location } = dataForecast;
-  res.send({
-    temperature,
-    location,
-  });
+  res.send(dataForecast);
 });
 
 app.get("/products", (req, res) => {
