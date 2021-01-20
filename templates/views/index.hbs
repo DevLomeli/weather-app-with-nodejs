@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Node and Express</title>
+</head>
+
+<body>
+    {{>header}}
+    <main class="container">
+        <h1>{{title}}</h1>
+        <form action="#" id="forecastForm">
+            <fieldset>
+                <input type="text" placeholder="Location">
+                <button type="submit">Search</button>
+            </fieldset>
+        </form>
+        <p id="errorMessage"></p>
+        <p id="city"></p>
+        <p id="forecast"></p>
+        <img src="./img/robot.png" alt="">
+    </main>
+
+    {{>footer}}
+
+
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+
+</html>

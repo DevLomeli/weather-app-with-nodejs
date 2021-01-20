@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav > * {
+  margin-right: 1rem;
+}
+header img {
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-just-between {
+  justify-content: space-between;
+}
+
+main img {
+  padding: 1rem 0 0 0;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+p {
+  font-size: 24px;
+  color: rgb(32, 106, 186);
+}
+
+p:last-of-type {
+  color: teal;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+footer > p {
+  opacity: 0.5;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+button[type="submit"] {
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+button[type="submit"]:hover {
+  border: 1px solid black;
+}
