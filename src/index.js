@@ -3,6 +3,7 @@ const path = require("path");
 const hbs = require("hbs");
 const weatherStack = require("./utils/weatherStack");
 const app = express();
+const port = process.env.PORT || 3000;
 
 //Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -80,6 +81,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server initialized");
+app.listen(port, () => {
+  console.log("Server initialized on port ", port);
 });

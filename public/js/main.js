@@ -4,7 +4,7 @@ const forecastForm = document.querySelector("#forecastForm");
 const errorMessage = document.querySelector("#errorMessage");
 
 const getWeather = (place) => {
-  return fetch(`http://localhost:3000/weather?address=${place}`)
+  return fetch(`/weather?address=${place}`)
     .then((res) =>
       res.json().then((data) => {
         return data;
